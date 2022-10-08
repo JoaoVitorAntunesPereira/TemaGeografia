@@ -168,4 +168,8 @@ footer{
         grid-template-columns: 1fr;
         margin-top: 5%;
     }
+    footer{
+        padding: 10px;
+        text-align: center;
+    }
 }
