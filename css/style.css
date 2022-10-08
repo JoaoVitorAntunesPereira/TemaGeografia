@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+    background-color: whitesmoke;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 255, 0, 0.158);
+    background-image: url(../imagens2/fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: 1;
+    position: relative;
+    background-position: bottom center;
+}
+
+header div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+footer{
+    background-color: cadetblue;
+    height: 100px;
+}
+
+h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+   /*  background-color: rgba(0, 0, 0, 0.103); */
+    color: azure;
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    font-size: 130%;
+    margin-top: 30px;
+}
+
+main section{
+    margin: 200px 0;
+}
+
+main #caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+main #caracteristicas img{
+    max-width: 80%;
+}
+
+main #caracteristicas li{
+    line-height: 150%;
+}
+
+main #clima, #relevo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main #clima img{
+    width: 100%;
+    margin: 10px;
+}
+
+main #solo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main #solo div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+main #solo img{
+    width: 98%;
+    margin: 1px;
+}
+
+main #rios #imgsrios img{
+    width: 48%;
+    margin: 1%;
+}
+
+#imgsrios{
+    display: flex;
+}
+
+main #divmapa{
+    display: flex;
+}
+
+/* main #rios #maparios{
+    width: 97%;
+    margin: 1%;
+} */
+
+main #vegetacao #matas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main section #tiposdematas .tipos{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 5%;
+}
+
+#tiposdematas div img{
+    width: 100%;
+}
+
+@media (max-width: 1100px){
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    main #clima, #relevo{
+        display: block;
+    }
+    main #clima, #relevo img{
+        width: 100%;
+    }
+    main #rios img{
+        width: 50%;
+    }
+    main #rios #imgsrios img{
+        width: 100%;
+        
+    }
+    #imgsrios{
+        display: block;
+    }
+    #rios #maparios{
+        width: 100%;
+    }   
+    #divmapa{
+        flex-wrap: wrap;
+    }
+    main #vegetacao #matas{
+        display: block;
+    }
+    main #vegetacao #matas img{
+        width: 100%;
+    }
+    main section #tiposdematas .tipos{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5%;
+    }
+}
