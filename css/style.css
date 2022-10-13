@@ -3,6 +3,7 @@ body{
     padding: 0;
     height: 1000px;
     background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -24,10 +25,7 @@ header div{
     background-color: rgba(0, 0, 0, 0.322);
 }
 
-footer{
-    background-color: cadetblue;
-    height: 100px;
-}
+
 
 h1{
     margin: 0;
@@ -39,6 +37,7 @@ h1{
    /*  background-color: rgba(0, 0, 0, 0.103); */
     color: azure;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 main{
@@ -53,9 +52,8 @@ main section{
 }
 
 main #caracteristicas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -105,10 +103,10 @@ main #divmapa{
     display: flex;
 }
 
-/* main #rios #maparios{
-    width: 97%;
-    margin: 1%;
-} */
+main #rios li{
+    line-height: 30px;
+    margin-left: 20px;
+}
 
 main #vegetacao #matas{
     display: grid;
@@ -128,6 +126,8 @@ main section #tiposdematas .tipos{
 footer{
     padding: 10px;
     text-align: center;
+    background-color: cadetblue;
+    height: 200px;
 }
 #final h2{
     text-align: center;
