@@ -175,4 +175,7 @@ footer{
         padding: 10px;
         text-align: center;
     }
+    main #caracteristicas {
+    display: block;
+}
 }
