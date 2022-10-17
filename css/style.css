@@ -118,6 +118,10 @@ main section #tiposdematas .tipos{
     grid-template-columns: 30% 70%;
     margin-top: 5%;
 }
+main section #tiposdematas .tipos div{
+    text-align: justify;
+    margin: 10px;
+}
 
 #tiposdematas div img{
     width: 100%;
