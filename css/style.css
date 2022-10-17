@@ -176,6 +176,9 @@ footer{
         text-align: center;
     }
     main #caracteristicas {
-    display: block;
-}
+    display: block;    
+    }
+    main #rios ul{
+        margin-left: -10%;
+    }
 }
